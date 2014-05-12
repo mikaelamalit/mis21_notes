@@ -24,3 +24,33 @@ to open localhost:3000
 rails new [app_name]
 rails server
 rails generate controller [name]
+
+rails generate model User username email password birthdate:date
+:date - is a specification; default is string
+this is under tweeter > app > models
+
+under tweeter > db > migrate
+open file there
+
+terminal
+'rake db:migrate'
+undo one step: 'rake db:rollback'
+
+get to console
+'rails console'
+interface similar to irb
+
+'rails generate scaffold Tweet content user poster_on:datetime likes:integer'
+'rake db:migrate'
+'rails server'
+
+github (first time pushing)
+follow instructions on new repo
+
+github (once cloned)
+git init
+git add .
+git commit -m "blah"
+git push
+
+
