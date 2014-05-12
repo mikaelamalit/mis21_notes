@@ -16,3 +16,11 @@ def written there runs with localhost:3000/hi
 
 go to tweeter > config
 open routes.rb
+
+tips:
+'rails server'
+to open localhost:3000
+
+rails new [app_name]
+rails server
+rails generate controller [name]
