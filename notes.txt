@@ -1,0 +1,18 @@
+open terminal
+go to desired folder
+'rails new [tweeter]' or other app name 
+open tweeter folder
+uncomment 'therubyracer'
+save
+go to terminal again
+change dir to tweeter
+'bundle install'
+'rails server'
+
+'rails generate controller pages'
+go to app > controllers
+open pages_controller folder
+def written there runs with localhost:3000/hi
+
+go to tweeter > config
+open routes.rb
