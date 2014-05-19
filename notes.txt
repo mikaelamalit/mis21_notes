@@ -44,6 +44,19 @@ interface similar to irb
 'rake db:migrate'
 'rails server'
 
+delete controller/model/scaffold:
+rails destroy controller [controller_name]
+rails destroy model [model_name]
+rails destroy scaffold [scaffold_name]
+
+to include twitter bootstrap sylesheet:
+open Gemfile
+type ‘gem 'twitter-bootstrap-rails’’ at the bottom
+save
+type ‘bundle’ in terminal to install it
+type ‘rails g bootstrap:install’ to generate it
+
+
 github (first time pushing)
 follow instructions on new repo
 
