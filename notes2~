@@ -1,0 +1,28 @@
+gem to create new forms:
+	gem 'simple_form'
+to check if it is installed
+	bundle install | grep simple_form
+
+rails g simple_form:install --bootstrap
+
+rails g bootstrap --static
+
+in user.rb
+has_many :tweets
+
+linking email to user:
+gem 'devise'
+rails g devise:install
+
+rails g devise [model_name]
+rake db:migrate
+
+if error: comment
+#add_index :users, :email,                unique: true
+#add_index :users, :reset_password_token, unique: true
+
+make sure no email in create tweets/user
+if still error:
+bundle exec rake db:migrate
+
+before_action :authenticate_user!
