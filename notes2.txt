@@ -5,7 +5,7 @@ to check if it is installed
 
 rails g simple_form:install --bootstrap
 
-rails g bootstrap --static
+rails g bootstrap:install static
 
 in user.rb
 has_many :tweets
@@ -26,3 +26,5 @@ if still error:
 bundle exec rake db:migrate
 
 before_action :authenticate_user!
+
+<li><%= link_tpo "Log out", destroy_user_session_path, method: :delete%></li>
